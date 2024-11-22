@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="@dimen/margin_basex2">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="@dimen/text_medium"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:paddingBottom="16dp" />
+
+    <!-- Logo hình ảnh -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/image_base"
+        android:layout_height="@dimen/image_base"
+        android:layout_gravity="center"
+        android:src="@drawable/my_logo" />
+
+    <!-- Header TextView cho hai cột -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/from_xml"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/from_code"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+    </GridLayout>
+
+    <!-- GridLayout chứa các nút hiệu ứng -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_base"
+        android:columnCount="2"
+        android:padding="8dp">
+
+        <!-- Nút cho từng hiệu ứng, cột trái là XML, cột phải là Code -->
+
+        <!-- Cặp nút FADE IN -->
+        <Button
+            android:id="@+id/btn_fade_in_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/fade_in" />
+
+        <Button
+            android:id="@+id/btn_fade_in_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/fade_in" />
+
+        <!-- Cặp nút FADE OUT -->
+        <Button
+            android:id="@+id/btn_fade_out_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/fade_out" />
+
+        <Button
+            android:id="@+id/btn_fade_out_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/fade_out" />
+
+        <!-- Cặp nút BLINK -->
+        <Button
+            android:id="@+id/btn_blink_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/blink" />
+
+        <Button
+            android:id="@+id/btn_blink_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/blink" />
+
+        <!-- Cặp nút ZOOM IN -->
+        <Button
+            android:id="@+id/btn_zoom_in_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/zoom_in" />
+
+        <Button
+            android:id="@+id/btn_zoom_in_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/zoom_in" />
+
+        <!-- Cặp nút ZOOM OUT -->
+        <Button
+            android:id="@+id/btn_zoom_out_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/zoom_out" />
+
+        <Button
+            android:id="@+id/btn_zoom_out_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/zoom_out" />
+
+        <!-- Cặp nút ROTATE -->
+        <Button
+            android:id="@+id/btn_rotate_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/rotate" />
+
+        <Button
+            android:id="@+id/btn_rotate_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/rotate" />
+
+        <!-- Cặp nút MOVE -->
+        <Button
+            android:id="@+id/btn_move_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/move" />
+
+        <Button
+            android:id="@+id/btn_move_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/move" />
+
+        <!-- Cặp nút SLIDE UP -->
+        <Button
+            android:id="@+id/btn_slide_up_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/slide_up" />
+
+        <Button
+            android:id="@+id/btn_slide_up_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/slide_up" />
+
+        <!-- Cặp nút BOUNCE -->
+        <Button
+            android:id="@+id/btn_bounce_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/bounce" />
+
+        <Button
+            android:id="@+id/btn_bounce_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/bounce" />
+
+        <!-- Cặp nút COMBINE -->
+        <Button
+            android:id="@+id/btn_combine_xml"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/combine" />
+
+        <Button
+            android:id="@+id/btn_combine_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="@dimen/margin_base"
+            android:layout_marginEnd="@dimen/margin_base"
+            android:text="@string/combine" />
+
+    </GridLayout>
+</LinearLayout>
